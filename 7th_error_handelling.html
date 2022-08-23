@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // error handelling
+        let a ="lpu";
+        // if we write a=undefined then it will show else part;
+        if(a!=undefined)
+        {
+            document.write("a is not defined")
+        }
+        else
+        {
+            document.write("a is defined")
+        }
+    </script>
+    <br>
+    <script>
+         // if we want to throw error
+        // function ayush();
+        // {
+
+        // }
+        try{
+            abcdef   //not any thing so catch will be called
+            document.write("we are in try")
+            //function ayush();
+            /*for line 33 refference error will not be in red color if we will
+            write it before try block then error will be in red line 26*/
+        }
+      
+        catch(error)
+        {
+            document.write("something went wrong<br/>")
+            document.write(error.name,"<br/>");         //to check error name.
+            document.write(error.message,"<br/>");
+        }
+        finally
+        {
+            document.write("finally statement")
+        }
+    </script>
+
+    <!-- /*errors in js
+    1-Refrence error {This error is thrown when a reference made to a variable or item
+                      is broken. That is the variable or item doesn’t exist}
+    2-SyntaxError{when writing the syntax incorrectly,}
+    3-TypeError{document.Write("finally statement") ; here "W" will be in small case}
+    4-RangeError
+    5-urlError{URL is invalid}
+    */ -->
+
+
+   
+</body>
+</html>

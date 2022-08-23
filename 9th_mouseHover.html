@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- wap to demonstrate mouse events and events -->
+    <div id="first">
+        <p> mouse onclick event when clicked the button it will change the color</p>
+        <button onClick="document.getElementById('first').style.color = 'red'">click to change the color</button>
+    </div>
+    <div id="SECOND" onmousedown="mouseDown()" onmouseup="mouseUp()">
+        <p> mouseUP() {WHEN MOUSE IS ON THE TEXT AND CLICKING ON IT}
+            <BR/>
+            mouseDown(){WHEN MOUSE IS ON THE TEXT AND AFTER RELISING CLICK}
+        </p>
+    </div>
+    <script>
+        function mouseDown() {
+          document.getElementById("SECOND").style.color = "BLUE";
+        }
+        
+        function mouseUp() {
+          document.getElementById("SECOND").style.color = "green";
+        }
+        </script>
+        
+</body>
+</html>

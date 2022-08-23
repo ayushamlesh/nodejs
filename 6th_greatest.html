@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- largest of five number -->
+<script>
+    alert("give the value for finding greatest among five values")
+    const fir = parseInt(prompt("Enter value of a: "));
+    const sec = parseInt(prompt("Enter value of b: "));
+    const thir = parseInt(prompt("Enter value of c: "));
+    const fourt = parseInt(prompt("Enter value of d: "));
+    const fifth = parseInt(prompt("Enter value of e: "));
+    if (fir>sec || fir>thir || fir>fourt ||fir>fifth)
+    {
+        document.write(fir," is greatest.")
+    }
+    else if ((sec>thir || sec>fourt ||sec>fifth))
+    {
+        document.write(sec," is greatest.")
+    }
+    else if ((thir>fourt ||thir>fifth))
+    {
+        document.write(thir," is greatest.")
+    }
+    else if ((fourt>fifth))
+    {
+        document.write(fourt," is greatest.")
+    }
+    else
+    {
+        document.write(fifth," is greatest")
+    }
+
+</script>
+</body>
+</html>
