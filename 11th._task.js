@@ -6,7 +6,7 @@
 5.rename the file to lpu.txt
 6.now delete both the file and folder
 */
-//1.
+//1.h
 const fs = require("fs")
 fs.mkdirSync("ayush")
 //folder is created
