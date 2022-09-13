@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //for running file use "node chalk.js" command
+// Coloring different text messages
+function valida()
+{
+const a = prompt("Enter email: ");
+const chalk = require("chalk");
+const val = require("validator");
+if (val.isEmail(a) == true) {
+    console.log(chalk.green("Valid Email"));
+    console.log(chalk.green('valid email'));
+}
+else {
+    console.log(chalk.red('not valid'));
+}
+}
+valida()
+   </script> 
+</body>
+</html>
