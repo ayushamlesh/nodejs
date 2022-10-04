@@ -5,7 +5,7 @@
 //by using "npm i chalk@4.1.2"
 //for running file use "node chalk.js" command
 const chalk = require("chalk");
-
+//document.write(chalk.whiteBright.underline.bold("LPU"))
 // Coloring different text messages
 console.log(chalk.green("Welcome"))
 console.log(chalk.red.underline("to"))
