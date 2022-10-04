@@ -1,0 +1,65 @@
+download from browser by writing mongodb in browser.
+download communitee version.
+bin tak ja kr environmentvariablepath mai paste kr do
+after installation 
+in terminal type "npm install mongodb"
+type  "mongo"on cmd to see the version of mongodb 
+it is cross platfom document oriented databse pgn
+it is classified as noSQL
+it is object based(table is called collections in collections there is documents)
+uses JSON -like documents with optional schemas.
+
+
+table->collections
+row/tuple->document
+column->field
+document is set of key-value pair
+
+example->{
+id:1,
+name:"Ayush"
+}
+
+id->12 bytes hexadecimal number hota hai.
+
+data model ->2->embedded data model,normalized data is sub devided
+__________________________________________________________________
+
+PRATICLE DETAIL
+1)check mongo db version
+    mongo
+2)to see data base present
+    show dbs
+    by default 3 hota hai
+3)create database
+    use <database NAME>
+4)check the databse
+    use "db" command to see current database
+5)create collections    
+    db.createcollection
+    db.showcollection
+6)drop collection
+    db.collectionNAME.drop()
+7)drop data base    
+    db.dropDatabase()
+            STEPS: show db,use student,db.dropDatabase(),show dbs
+8)insert data
+    db.collectionNAME.insert(document)
+    ->db.student.insert(
+        {
+            "name":"ayush
+        })
+9)find document 
+    db.collectionNAME.find
+    db.student({"name":"ayush"})
+
+1db,1collection,5document,4columns,find the document
+
+10)pretty()
+    it is used to give output in form of JSON
+    db.student.find()
+11)insertOne()
+12)insertMany()
+13)update()
+14)db.student.save()
+15)
